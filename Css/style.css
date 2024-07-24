@@ -474,7 +474,7 @@ ul li {
 
 .titleSeccionCustom h1{
     position: relative;
-    top: 20px;
+    top: 50px;
     font-family: 'orbitron';
     font-weight: 500;
     font-size: 2rem;
@@ -579,7 +579,7 @@ ul li {
 .seccionPcArmadas h2{
     font-family: 'orbitron';
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     color: #8a19fc;
     text-shadow: 2px 2px 4px #8a19fc;
@@ -598,6 +598,10 @@ ul li {
 .imgPcs img{
     width: 150px;
     height: 200px;
+}
+
+.btn{
+    display: none;
 }
 
 
@@ -937,7 +941,7 @@ footer{
         }
     
 
-        /*Inicio de seccion de informacion de pagos y envios del index*/
+ /*Inicio de seccion de informacion de pagos y envios del index*/
 .seccionInfo{
     display: block;
     width: 100%;
@@ -1362,6 +1366,10 @@ footer{
 .imgPcs img{
     width: 320px;
     height: 350px;
+}
+
+.btn{
+    display: block;
 }
 
 /*FIN CUSTOM RESPONSIVE*/
