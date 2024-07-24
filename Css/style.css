@@ -463,13 +463,7 @@ ul li {
 /*ESTILOS CUSTOM PC */
 
 .fondoContainer2{
-    width: 100%;
-    height: 190px;
-    background-image: url('../img/fondo2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 20px 0 0 0;
+  display: none;
 }
 
 .titleSeccionCustom h1{
@@ -1215,6 +1209,7 @@ footer{
 /*ESTILOS CUSTOM PC RESPONSIVE*/
 
 .fondoContainer2{
+    display: block;
     width: 100%;
     height: 500px;
     background-image: url('../img/fondo2.jpg');
