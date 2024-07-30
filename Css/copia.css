@@ -1,0 +1,1493 @@
+/*Importo la fuente de GoogleFonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*ESTILOS HEADER*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 0 15px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+ul li {
+    margin: 0 25px;
+}
+
+
+.nav-item {
+    font-size: 1.5rem;
+    /* font-family: "Orbitron", sans-serif; */
+    font-family: 'orbitron';
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.colorNavBar{
+    color: #a0e602;
+}
+.dropdown-menu{
+    background-color: #333;
+}
+.dropdown-toggle{
+    color: #a0e602;
+}
+
+.dropdown-item{
+    font-weight: 500;
+    color: #ffff;
+    font-family: 'orbitron';
+}
+
+.dropdown-item:hover{
+    background-color: #a0e602;
+}
+
+
+/*FIN ESTILOS HEADER*/
+
+/*ESTILOS SECCION 1 INICIO*/
+
+.fondoContainer {
+    width: 100%;
+    height: 100px;
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0 0 0;
+}
+
+/*FIN ESTILOS SECCION 1 INICIO*/
+
+
+/*ESTILOS SECCION 2*/
+
+.seccion-productos-destacados {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.seccion-productos-destacados .titleProductosDestacados {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: gray;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+.seccion-productos-destacados .contenedor-productos-destacados {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.seccion-productos-destacados .cardContainer {
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 250px;
+    height: 400px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardContainer img {
+    width: 250px;
+    height: 250px;
+    border-radius: 3px;
+    margin: 0 25px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.cardContainer img:hover {
+    scale: 1.02;
+    transition: all;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.cardContainer p {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+    color: gray;
+    font-weight: 700;
+}
+
+/*BOTON VISTA DE PRODUCTOS*/
+.botonVistaProducto {
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #b8fe02;
+    border-radius: 3px;
+}
+
+.botonVistaProducto a {
+    font-family: 'poppins';
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.buttonContainer {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+/*FIN SECCION 2 DEL INICIO*/
+
+/*Inicio de seccion de informacion de pagos y envios del index*/
+.seccionInfo{
+    display: none;
+}
+/*Fin de seccion de informacion de pagos y envios del index*/
+
+
+
+/*ESTILOS SECCION 4 DEL INDEX*/
+.titleNuevosIngresos{
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin-top: 70px;
+    color: gray;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+
+.seccion-nuevos-ingresos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-nuevos-ingresos-container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 50px 0;
+
+}
+
+/*Estilado de las cards de nuevos ingresos*/
+.cardNuevosIngresos{
+    width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.cardNuevosIngresos img{
+    width: 300px;
+    height: 350px;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoContainer .titleCardContainer{
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+    color: gray;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.infoContainer .info{
+    text-align: center;
+    font-size: .8rem;
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+    margin: 10px ;
+}
+
+ /*BOTON NUEVOS LANZAMIENT0S*/
+.botonLanzamiento {
+    width: 110px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.botonLanzamiento a {
+    font-family: 'poppins';
+    font-weight: 700;
+    text-decoration: none;
+    color: #b8fe02;
+}
+
+.botonLanzamiento:hover{
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1); /* Ajustar la sombra del texto */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Ajustar la sombra del botón */
+    color: white;
+    cursor: pointer;
+}
+
+
+/*FIN SECCION 4 DEL INICIO*/
+
+/*INICIO DE SECCION 5 DEL INICIO*/
+
+ .marcasDisponibles {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    padding: 25px;
+} 
+
+.contenedorMarcas{
+    max-width: 75%;
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   gap: 15px;
+}
+
+.marcasDisponibles img{
+    width: 100px;
+    height: 70px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+/*FIN SECCION 5 DEL INICIO*/
+
+/*ESTILADO DE PRODUCTOS Y OUTLET*/
+
+.tituloSeccionProductos h1{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0;
+    color: gray;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+.tituloSeccionProductos h2{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0;
+    color: #b8fe02;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+
+.input-search-container{
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-search-container .inputContainer input{
+    width: 150px;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.input-search-container input::placeholder{
+    color: black;
+    font-size: .8rem;
+    font-family: 'poppins';
+    font-weight: 600;
+    text-align: left;
+    padding: 5px;
+}
+
+
+.btnBuscar{
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    top: 0;
+    color: #a0e602;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.btnBuscar:hover{
+    background-color: #a0e602;
+    color: black;
+    transition: 1s;
+}
+
+
+.section-productos-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-productos-container .grillaProductosContainer{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-productos-container .grillaProductosContainer .cardProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.section-productos-container .grillaProductosContainer .cardProductos img{
+    background-color: #F5F5F5;
+    width: 280px;
+    height: 280px;
+}
+
+.infoProductoContainer .titleProducto{
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    color: gray;
+}
+
+.infoProductoContainer .infoProductos{
+    text-align: center;
+    font-size: .9rem;
+    font-family: "Orbitron", sans-serif;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.seccion-medios-de-pago{
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleMediosDePago{
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(115, 250, 5, 0.7);
+}
+
+
+.mediosDePago{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediosDePago img{
+    width: 60px;
+    height: 30px;
+}
+
+.seccion-envios{
+  display: none;
+}
+
+/*FIN DE ESTILOS PRODUCTOS Y OUTLET*/
+
+
+/*ESTILOS CUSTOM PC */
+
+.fondoContainer2{
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0 0 0;
+}
+
+.titleSeccionCustom h1{
+    position: relative;
+    top: 50px;
+    font-family: 'orbitron';
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    /* color: #8a19fc; */
+    text-shadow: 2px 2px 4px #8a19fc;
+}
+
+.section-custom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionContainerCustom{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer img{
+    width: 150px;
+    height: 150px;
+}
+
+.infoCustom{
+    display: none;
+}
+
+.infoCustom p{
+    display: none;}
+
+.img2 img{
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.infoCustom img{
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.seccionVentas{
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/fondo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.infoSeccionventas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+.info1 .parrafo1{
+    font-family: 'orbitron';
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    color: #a0e602;
+}
+
+.info1 .parrafo2{
+    font-family: 'orbitron';
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #a0e602;
+    text-shadow: 2px 2px 4px black;
+}
+
+.seccionPcArmadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionPcArmadas h2{
+    font-family: 'orbitron';
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: #8a19fc;
+    text-shadow: 2px 2px 4px #8a19fc;
+    margin: 20px 0;
+}
+
+.imgPcs{
+    margin: 0 0 10px 0;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.imgPcs img{
+    width: 150px;
+    height: 200px;
+}
+
+
+/*FIN ESTILOS CUSTOM PC*/
+
+
+/*ESTILOS-CONTACTOS*/
+
+.titleSeccionContactos{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 70px 0 0 0;
+    color: gray;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+.subtitle-seccion-contactos{
+    text-align: center;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 10px 0 50px 0;
+    color: #b8fe02;
+}
+
+.seccion-formulario-contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titleContactos{
+    color: #b8fe02;
+    font-size: 1.3rem;
+    font-family: 'orbitron';
+    font-weight: 500;
+    text-align: center;
+}
+
+.formContainer{
+    width: 95%;
+    height: 600px;
+    background-color: #333;
+    /* background-image: url(../img/gabinete.png); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin: 0 0 80px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.seccion-formulario-contacto form input{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'poppins';
+
+}
+
+.seccion-formulario-contacto form input::placeholder{
+    text-align: left;
+    color: gray;
+    font-family: 'orbitron';
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #a0e602;
+ }
+
+.seccion-formulario-contacto form textarea{
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+
+.seccion-formulario-contacto form textarea::placeholder{
+    text-align: left;
+    color: gray;
+    font-family: 'orbitron';
+    font-weight: bold;
+}
+
+textarea:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #a0e602;
+ }
+
+
+.botonEnviar{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: #b8fe02;
+    font-size: 1rem;
+    font-family: 'orbitron';
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.botonEnviar:hover {
+    background-color: #a0e602; /* Color de fondo al pasar el cursor */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Ajustar la sombra del texto */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Ajustar la sombra del botón */
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.img-contacto-container{
+ width: 40%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.contactoCardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contactoCardContainer svg{
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+#oficina{
+    color: #5CB85C;
+}
+
+#telefono{
+    color: #1A5276;
+}
+
+#mail{
+    color: #992B2B;
+}
+
+.contactoCardContainer h2{
+    color: gray;
+    font-size: 1.5rem;
+    font-family: 'orbitron';
+    font-weight: 700;
+    text-align: center;
+}
+
+.contactoCardContainer p{
+    font-size: 1.2rem;
+    font-family: 'poppins';
+    font-weight: 500;
+    text-align: center;
+}
+
+/*FIN ESTILOS CONTACTOS*/
+
+
+
+
+/*ESTILOS FOOTER*/
+
+footer{
+    width: 100%;
+    height: 100%;
+}
+
+.footerContainer {
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+.footerContainer .contactosFooterContainer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    margin: 5px 25px;
+}
+
+.contactosFooterContainer svg {
+    width: 25px;
+    height: 25px;
+    color: white;
+
+}
+
+.contactosFooterContainer .svgLogo {
+    width: 55px;
+    height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    margin: 5px 25px;
+}
+
+#whatsapp{
+    background-color: darkgreen;
+}
+
+#instagram{
+    background-color: #c13584
+}
+
+#facebook{
+    background-color: #3b5998;
+}
+
+.footerContainer .imgLogoContainerFooter {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5px 25px;
+}
+
+.imgLogoContainerFooter .logoFooter {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+
+/*BOTON PARA VOLVER AL INICIO*/
+
+.botonUpContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+}
+
+.botonArriba {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    margin: 5px;
+    animation: vibrar 0.5s ease
+}
+
+.botonArriba:hover{
+    animation: none;
+}
+
+.botonArriba svg {
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+ @keyframes vibrar {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-3px) rotate(-1deg);
+    }
+    40% {
+      transform: translateX(3px) rotate(1deg);
+    }
+    60% {
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    80% {
+      transform: translateX(2px) rotate(1deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  } 
+
+  /*FIN ESTILOS FOOTER*/
+  
+/*RESPONSIVE DESIGN PARA PASAR DE MOBILE A TABLET Y DESKTOP*/
+
+@media (min-width:768px){
+    /*RESPONSIVE INICIO*/
+
+
+     /*SECCION 1 DEL INDEX RESPONSIVE*/
+
+     .fondoContainer {
+        width: 100%;
+        height: 350px;
+    }
+
+    /*FIN ESTILOS SECCION 1 DEL INDEX*/
+
+    .seccion-productos-destacados .cardContainer {
+        width: 300px;
+        height: 400px;
+        }
+    
+
+ /*Inicio de seccion de informacion de pagos y envios del index*/
+.seccionInfo{
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.seccionInfo .containerInfo{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 2px;
+}
+.containerInfo svg{
+    width: 100px;
+    height: 100px;
+    color: gray;
+}
+
+.svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+
+.cuotas,
+.envios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 35%;
+}
+
+.infoCuotas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.envios p{
+    font-size: 1rem;
+    font-family: 'arial';
+    font-weight: 500;
+}
+
+.cuotas p{
+    font-size: 1rem;
+    font-family: 'arial';
+    font-weight: 500;
+}
+
+.infoCuotas:nth-child(2){
+    font-size: .9rem;
+    font-family: 'arial';
+    font-weight: 500;
+}
+
+/*Fin de seccion de informacion de pagos y envios del index*/
+
+
+    /* SECCION 4 DEL INDEX RESPONSIVE*/
+
+ .marcasDisponibles {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 25px;
+
+} 
+
+.contenedorMarcas{
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcasDisponibles img{
+    width: 180px;
+    height: 70px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+/* FIN SECCION 4 DEL INDEX*/
+
+
+
+/*ESTILADO DE PRODUCTOS RESPOPNSIVE*/
+
+.tituloSeccionProductos h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0;
+    color: gray;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+.tituloSeccionProductos h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0;
+    color: black;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+.input-search-container{
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.inputContainer{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.input-search-container .inputContainer input{
+    width: 400px;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.input-search-container input::placeholder{
+    color: black;
+    font-size: 1rem;
+    font-family: 'poppins';
+    font-weight: 600;
+    text-align: left;
+    padding: 5px;
+}
+
+
+.btnBuscar{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    left: -100px;
+    top: 0;
+    color: #a0e602;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.btnBuscar:hover{
+    background-color: #a0e602;
+    color: black;
+    transition: 1s;
+}
+
+.section-productos-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-productos-container .grillaProductosContainer{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-productos-container .grillaProductosContainer .cardProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-productos-container .grillaProductosContainer .cardProductos img{
+    background-color: #F5F5F5;
+    width: 250px;
+    height: 250px;
+}
+
+.infoProductoContainer .titleProducto{
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    color: gray;
+}
+
+.infoProductoContainer .infoProductos{
+    text-align: center;
+    font-size: .9rem;
+    font-family: "Orbitron", sans-serif;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.seccion-medios-de-pago{
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleMediosDePago{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "Orbitron", sans-serif;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(115, 250, 5, 0.7);
+}
+
+
+.mediosDePago{
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediosDePago img{
+    width: 130px;
+    height: 100px;
+}
+
+.seccion-envios{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-image: url('../img/envios.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0 0 0;
+}
+
+/*FIN DE PRODUCTOS RESPOPNSIVE*/
+
+/*ESTILOS CUSTOM PC RESPONSIVE*/
+
+.fondoContainer2{
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0 0 0;
+}
+
+.titleSeccionCustom h1{
+    position: relative;
+    top: 190px;
+    font-family: 'orbitron';
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    /* color: #8a19fc; */
+    text-shadow: 2px 2px 4px #8a19fc;
+}
+
+.section-custom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionContainerCustom{
+    width: 85%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer{
+    width: 30%;
+}
+
+.imgContainer img{
+    width: 250px;
+    height: 250px;
+}
+
+.infoCustom{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoCustom p{
+    display: block;
+    font-family: 'orbitron';
+    font-weight: 800;
+    font-size: 2.1rem;
+    text-align: center;
+    color: #8a19fc;
+    text-shadow: 2px 2px 4px #b8fe02;
+}
+.img2{
+    width: 30%;
+}
+
+.img2 img{
+    width: 250px;
+    height: 150px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.infoCustom img{
+    width: 250px;
+    height: 150px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.seccionVentas{
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/fondo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.infoSeccionventas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+.info1 .parrafo1{
+    font-family: 'orbitron';
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #a0e602;
+}
+
+.info1 .parrafo2{
+    font-family: 'orbitron';
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #a0e602;
+    text-shadow: 2px 2px 4px black;
+}
+
+.seccionPcArmadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionPcArmadas h2{
+    font-family: 'orbitron';
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #8a19fc;
+    text-shadow: 2px 2px 4px #8a19fc;
+    margin: 20px 0;
+}
+
+.imgPcs{
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.imgPcs img{
+    width: 320px;
+    height: 350px;
+}
+
+.btn{
+    display: block;
+}
+
+/*FIN CUSTOM RESPONSIVE*/
+
+
+
+/*ESTILOS-CONTACTOS RESPONSIVE*/
+
+.titleSeccionContactos{
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0 0 0;
+    color: gray;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+.subtitle-seccion-contactos{
+    text-align: center;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 10px 0 50px 0;
+    color: #b8fe02;
+}
+
+.seccion-formulario-contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titleContactos{
+    color: #b8fe02;
+    font-size: 1.5rem;
+    font-family: 'orbitron';
+    font-weight: 800;
+}
+
+.formContainer{
+    width: 550px;
+    height: 600px;
+    background-color: #333;
+    /* background-image: url(../img/gabinete.png); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.seccion-formulario-contacto form input{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'poppins';
+
+}
+
+.seccion-formulario-contacto form input::placeholder{
+    text-align: left;
+    color: gray;
+    font-family: 'orbitron';
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.seccion-formulario-contacto form textarea{
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+
+.seccion-formulario-contacto form textarea::placeholder{
+    text-align: left;
+    color: gray;
+    font-family: 'orbitron';
+    font-weight: bold;
+}
+
+.botonEnviar{
+    width: 350px;
+    height: 40px;
+    background-color: black;
+    color: #b8fe02;
+    font-size: 1rem;
+    font-family: 'orbitron';
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/*FIN ESTILOS CONTACTOS RESPONSIVE*/
+
+
+/*ESTILOS FOOTER RESPONSIVE*/
+
+
+/*BOTON PARA VOLVER AL INICIO*/
+
+.botonUpContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+}
+}
