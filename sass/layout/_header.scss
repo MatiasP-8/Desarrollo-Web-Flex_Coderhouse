@@ -1,0 +1,45 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0 0 15px;
+        filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    }
+
+    ul {
+        li {
+        margin: 0 25px;
+    }
+        .nav-item {
+            font-size: 1.5rem;
+            /* font-family: "Orbitron", sans-serif; */
+            font-family: 'orbitron';
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .colorNavBar{
+            color: #a0e602;
+        }
+        .dropdown-menu{
+            background-color: #333;
+        }
+        .dropdown-toggle{
+            color: #a0e602;
+        }
+        
+        .dropdown-item{
+            font-weight: 500;
+            color: #ffff;
+            font-family: 'orbitron';
+        }
+        
+        .dropdown-item:hover{
+            background-color: #a0e602;
+        }
+}
+}

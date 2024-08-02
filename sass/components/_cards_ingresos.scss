@@ -1,0 +1,89 @@
+.seccionNuevosIngresosTitle{
+    .titleNuevosIngresos{
+        text-align: center;
+        font-size: 2.8rem;
+        font-family: "Orbitron", sans-serif;
+        font-weight: bold;
+        margin-top: 70px;
+        color: gray;
+        text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+    }
+}
+
+.seccion-nuevos-ingresos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cards-nuevos-ingresos-container{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 50px 0;
+
+        .cardNuevosIngresos{
+            width: 320px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+
+            img{
+                width: 300px;
+                height: 350px;
+            }
+
+            .infoContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .titleCardContainer{
+                font-size: 1rem;
+                font-family: "Orbitron", sans-serif;
+                color: gray;
+                text-align: center;
+                margin: 5px 0;
+            }
+
+            .info{
+                text-align: center;
+                font-size: .8rem;
+                font-weight: bold;
+                font-family: "Orbitron", sans-serif;
+                margin: 10px ;
+            }
+
+            .botonLanzamiento {
+                width: 110px;
+                height: 40px;
+                border: none;
+                outline: none;
+                background-color: black;
+                border-radius: 3px;
+            }
+            
+            .botonLanzamiento a {
+                font-family: 'poppins';
+                font-weight: 700;
+                text-decoration: none;
+                color: #b8fe02;
+            }
+            
+            .botonLanzamiento:hover{
+                text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1); /* Ajustar la sombra del texto */
+                box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Ajustar la sombra del botón */
+                color: white;
+                cursor: pointer;
+            }
+        }
+            
+    }
+}

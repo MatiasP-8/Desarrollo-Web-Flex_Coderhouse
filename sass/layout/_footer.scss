@@ -1,0 +1,93 @@
+footer{
+    width: 100%;
+    height: 100%;
+
+    .footerContainer {
+        margin-top: 50px;
+        width: 100%;
+
+        .contactosFooterContainer {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            bottom: 5px;
+            margin: 5px 25px;
+
+            svg {
+                width: 25px;
+                height: 25px;
+                color: white;
+            }
+
+                .svgLogo {
+                    width: 55px;
+                    height: 55px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    border: none;
+                    outline: none;
+                    border-radius: 50%;
+                    margin: 5px 25px;
+                }
+            
+            #whatsapp{
+                background-color: darkgreen;
+            }
+            
+            #instagram{
+                background-color: #c13584
+            }
+            
+            #facebook{
+                background-color: #3b5998;
+            }
+        }
+
+        .imgLogoContainerFooter {
+            display: flex;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 5px 25px;
+
+            .logoFooter {
+                width: 100px;
+                height: 100px;
+                filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+            }
+        }
+    }
+
+    
+    .botonUpContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 40%;
+    }
+    
+    .botonArriba {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        outline: none;
+        border-radius: 100%;
+        margin: 5px;
+        animation: vibrar 0.5s ease
+    }
+    
+    .botonArriba:hover{
+        animation: none;
+    }
+    
+    .botonArriba svg {
+        width: 30px;
+        height: 30px;
+        font-weight: bold;
+        color: white;
+    }
+}
