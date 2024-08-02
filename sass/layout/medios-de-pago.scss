@@ -1,0 +1,32 @@
+.seccion-medios-de-pago{
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .titleMediosDePago{
+        text-align: center;
+        font-size: 1rem;
+        font-family: "Orbitron", sans-serif;
+        color: black;
+        padding: 10px;
+        font-weight: bold;
+        text-shadow: 0rem 0.1rem 0.2rem rgba(115, 250, 5, 0.7);
+    }
+
+    .mediosDePago{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 60px;
+            height: 30px;
+        }
+    }
+}

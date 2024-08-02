@@ -109,6 +109,11 @@ header ul .dropdown-item:hover {
   border-radius: 3px;
   margin: 0 25px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  transition: transform 1s, filter 1s;
+}
+.seccion-productos-destacados .contenedor-productos-destacados .cardContainer img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 .seccion-productos-destacados .contenedor-productos-destacados .cardContainer p {
   font-family: "Orbitron", sans-serif;
@@ -211,17 +216,17 @@ header ul .dropdown-item:hover {
   background-color: black;
   border-radius: 3px;
 }
-.seccion-nuevos-ingresos .cards-nuevos-ingresos-container .cardNuevosIngresos .botonLanzamiento a {
-  font-family: "poppins";
-  font-weight: 700;
-  text-decoration: none;
-  color: #b8fe02;
-}
 .seccion-nuevos-ingresos .cards-nuevos-ingresos-container .cardNuevosIngresos .botonLanzamiento:hover {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1); /* Ajustar la sombra del texto */
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Ajustar la sombra del botón */
   color: white;
   cursor: pointer;
+}
+.seccion-nuevos-ingresos .cards-nuevos-ingresos-container .cardNuevosIngresos .botonLanzamiento a {
+  font-family: "poppins";
+  font-weight: 700;
+  text-decoration: none;
+  color: #b8fe02;
 }
 
 /*MARCAS DISPONIBLES*/
@@ -257,6 +262,61 @@ header ul .dropdown-item:hover {
   color: gray;
   text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
 }
+.tituloSeccionProductos h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  margin: 50px 0;
+  color: #b8fe02;
+  text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+.input-search-container input {
+  color: black;
+  font-size: 0.8rem;
+  font-family: "poppins";
+  font-weight: 600;
+  text-align: left;
+  padding: 5px;
+}
+
+.input-search-container {
+  width: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-search-container input {
+  width: 100px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+.input-search-container input:focus {
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #a0e602;
+}
+.input-search-container .btnBuscar {
+  width: 80px;
+  height: 40px;
+  background-color: black;
+  position: relative;
+  left: -100px;
+  top: 0;
+  color: #a0e602;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+.input-search-container .btnBuscar:hover {
+  background-color: #a0e602;
+  color: black;
+  transition: 1s;
+}
 
 .section-productos-container {
   width: 100%;
@@ -272,7 +332,8 @@ header ul .dropdown-item:hover {
   justify-content: center;
   align-items: center;
 }
-.section-productos-container .grillaProductosContainer .cardProductos {
+
+.cardProductos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -280,25 +341,75 @@ header ul .dropdown-item:hover {
   padding: 10px;
   gap: 5px;
 }
-.section-productos-container .grillaProductosContainer .cardProductos img {
+.cardProductos img {
   background-color: #F5F5F5;
   width: 280px;
   height: 280px;
 }
-.section-productos-container .grillaProductosContainer .cardProductos .titleProducto {
+.cardProductos .titleProducto {
   text-align: center;
   font-size: 1rem;
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
   color: gray;
 }
-.section-productos-container .grillaProductosContainer .cardProductos .infoProductos {
+.cardProductos .infoProductos {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Orbitron", sans-serif;
   color: black;
   padding: 10px;
   font-weight: bold;
+}
+.cardProductos .botonLanzamiento {
+  width: 110px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: black;
+  border-radius: 3px;
+}
+.cardProductos .botonLanzamiento:hover {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1); /* Ajustar la sombra del texto */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Ajustar la sombra del botón */
+  color: white;
+  cursor: pointer;
+}
+.cardProductos .botonLanzamiento a {
+  font-family: "poppins";
+  font-weight: 700;
+  text-decoration: none;
+  color: #b8fe02;
+}
+
+.seccion-medios-de-pago {
+  width: 100%;
+  height: auto;
+  margin: 25px 0;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.seccion-medios-de-pago .titleMediosDePago {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  text-shadow: 0rem 0.1rem 0.2rem rgba(115, 250, 5, 0.7);
+}
+.seccion-medios-de-pago .mediosDePago {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.seccion-medios-de-pago .mediosDePago img {
+  width: 60px;
+  height: 30px;
 }
 
 /*FOOTER*/
@@ -372,7 +483,7 @@ footer .botonArriba {
   margin: 5px;
   animation: vibrar 0.5s ease;
 }
-footer .botonArriba:hover {
+footer:hover {
   animation: none;
 }
 footer .botonArriba svg {
@@ -380,6 +491,486 @@ footer .botonArriba svg {
   height: 30px;
   font-weight: bold;
   color: white;
+}
+
+@media (min-width: 768px) {
+  /*RESPONSIVE INICIO*/
+  /*SECCION 1 DEL INDEX RESPONSIVE*/
+  .fondoContainer {
+    width: 100%;
+    height: 350px;
+  }
+  /*FIN ESTILOS SECCION 1 DEL INDEX*/
+  .seccion-productos-destacados .cardContainer {
+    width: 300px;
+    height: 400px;
+  }
+  /*Inicio de seccion de informacion de pagos y envios del index*/
+  .seccionInfo {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+  .seccionInfo .containerInfo {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 2px;
+  }
+  .seccionInfo .containerInfo svg {
+    width: 100px;
+    height: 100px;
+    color: gray;
+  }
+  .seccionInfo .containerInfo .svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: white;
+  }
+  .seccionInfo .cuotas,
+  .seccionInfo .envios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 35%;
+  }
+  .seccionInfo .infoCuotas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionInfo .infoCuotas:nth-child(2) {
+    font-size: 0.9rem;
+    font-family: "arial";
+    font-weight: 500;
+  }
+  .seccionInfo .envios p {
+    font-size: 1rem;
+    font-family: "arial";
+    font-weight: 500;
+  }
+  .seccionInfo .cuotas p {
+    font-size: 1rem;
+    font-family: "arial";
+    font-weight: 500;
+  }
+  /*Fin de seccion de informacion de pagos y envios del index*/
+  /* SECCION 4 DEL INDEX RESPONSIVE*/
+  .marcasDisponibles {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 25px;
+  }
+  .marcasDisponibles .contenedorMarcas {
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .marcasDisponibles .contenedorMarcas img {
+    width: 180px;
+    height: 70px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  }
+  /* FIN SECCION 4 DEL INDEX*/
+  /*ESTILADO DE PRODUCTOS RESPOPNSIVE*/
+  .tituloSeccionProductos h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0;
+    color: gray;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+  }
+  .tituloSeccionProductos h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0;
+    color: black;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+  }
+  .input-search-container {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+  }
+  .input-search-container .inputContainer {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .input-search-container .inputContainer input {
+    width: 400px;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+  }
+  .input-search-container .btnBuscar {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    left: -100px;
+    top: 0;
+    color: #a0e602;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+  }
+  .input-search-container .btnBuscar:hover {
+    background-color: #a0e602;
+    color: black;
+    transition: 1s;
+  }
+  .section-productos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-productos-container .grillaProductosContainer {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .section-productos-container .grillaProductosContainer .cardProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-productos-container .grillaProductosContainer .cardProductos img {
+    background-color: #F5F5F5;
+    width: 250px;
+    height: 250px;
+  }
+  .section-productos-container .grillaProductosContainer .cardProductos .titleProducto {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    color: gray;
+  }
+  .section-productos-container .grillaProductosContainer .cardProductos .infoProductos {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Orbitron", sans-serif;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .seccion-medios-de-pago {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .seccion-medios-de-pago .titleMediosDePago {
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "Orbitron", sans-serif;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(115, 250, 5, 0.7);
+  }
+  .seccion-medios-de-pago .mediosDePago {
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccion-medios-de-pago .mediosDePago img {
+    width: 130px;
+    height: 100px;
+  }
+  .seccion-envios {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-image: url("../img/envios.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0 0 0;
+  }
+  /*FIN DE PRODUCTOS RESPOPNSIVE*/
+  /*ESTILOS CUSTOM PC RESPONSIVE*/
+  .fondoContainer2 {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/fondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0 0 0;
+  }
+  .titleSeccionCustom h1 {
+    position: relative;
+    top: 190px;
+    font-family: "orbitron";
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    /* color: #8a19fc; */
+    text-shadow: 2px 2px 4px #8a19fc;
+  }
+  .section-custom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionContainerCustom {
+    width: 85%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgContainer {
+    width: 30%;
+  }
+  .imgContainer img {
+    width: 250px;
+    height: 250px;
+  }
+  .infoCustom {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoCustom p {
+    display: block;
+    font-family: "orbitron";
+    font-weight: 800;
+    font-size: 2.1rem;
+    text-align: center;
+    color: #8a19fc;
+    text-shadow: 2px 2px 4px #b8fe02;
+  }
+  .img2 {
+    width: 30%;
+  }
+  .img2 img {
+    width: 250px;
+    height: 150px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  }
+  .infoCustom img {
+    width: 250px;
+    height: 150px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  }
+  .seccionVentas {
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/fondo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  .infoSeccionventas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .info1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+  }
+  .info1 .parrafo1 {
+    font-family: "orbitron";
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #a0e602;
+  }
+  .info1 .parrafo2 {
+    font-family: "orbitron";
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #a0e602;
+    text-shadow: 2px 2px 4px black;
+  }
+  .seccionPcArmadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionPcArmadas h2 {
+    font-family: "orbitron";
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #8a19fc;
+    text-shadow: 2px 2px 4px #8a19fc;
+    margin: 20px 0;
+  }
+  .imgPcs {
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .imgPcs img {
+    width: 320px;
+    height: 350px;
+  }
+  .btn {
+    display: block;
+  }
+  /*FIN CUSTOM RESPONSIVE*/
+  /*ESTILOS-CONTACTOS RESPONSIVE*/
+  .titleSeccionContactos {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0 0 0;
+    color: gray;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+  }
+  .subtitle-seccion-contactos {
+    text-align: center;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 10px 0 50px 0;
+    color: #b8fe02;
+  }
+  .seccion-formulario-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .titleContactos {
+    color: #b8fe02;
+    font-size: 1.5rem;
+    font-family: "orbitron";
+    font-weight: 800;
+  }
+  .formContainer {
+    width: 550px;
+    height: 600px;
+    background-color: #333;
+    /* background-image: url(../img/gabinete.png); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+  }
+  .seccion-formulario-contacto form input {
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    font-size: 16px;
+    font-family: "poppins";
+  }
+  .seccion-formulario-contacto form input::placeholder {
+    text-align: left;
+    color: gray;
+    font-family: "orbitron";
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .seccion-formulario-contacto form textarea {
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+  }
+  .seccion-formulario-contacto form textarea::placeholder {
+    text-align: left;
+    color: gray;
+    font-family: "orbitron";
+    font-weight: bold;
+  }
+  .botonEnviar {
+    width: 350px;
+    height: 40px;
+    background-color: black;
+    color: #b8fe02;
+    font-size: 1rem;
+    font-family: "orbitron";
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+  /*FIN ESTILOS CONTACTOS RESPONSIVE*/
+  /*ESTILOS FOOTER RESPONSIVE*/
+  /*BOTON PARA VOLVER AL INICIO*/
+  .botonUpContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

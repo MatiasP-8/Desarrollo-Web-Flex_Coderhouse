@@ -1,0 +1,92 @@
+.tituloSeccionProductos{ 
+    
+    h1{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0;
+    color: gray;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+h2{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    margin: 50px 0;
+    color: #b8fe02;
+    text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+}
+
+%placeholder {
+    color: black;
+    font-size: .8rem;
+    font-family: 'poppins';
+    font-weight: 600;
+    text-align: left;
+    padding: 5px;
+  }
+
+
+.input-search-container{
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input{
+        @extend %placeholder;
+        width: 100px;
+        height: 40px;
+        border: 1px solid lightgray;
+        border-radius: 2px;
+
+        &:focus{
+            outline: none !important;
+            border-color: #719ECE;
+            box-shadow: 0 0 10px #a0e602;
+        }
+    }
+
+.btnBuscar{
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    left: -100px;
+    top: 0;
+    color: #a0e602;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+
+    &:hover{
+        background-color: #a0e602;
+        color: black;
+        transition: 1s;
+    }
+}
+
+}
+
+
+.section-productos-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .grillaProductosContainer{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+}

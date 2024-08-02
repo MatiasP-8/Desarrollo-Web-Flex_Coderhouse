@@ -20,6 +20,7 @@
 
 @import "./layout/productos_destacados";
 
+
 /*INFO DE PAGOS Y ENVIOS INDEX*/
 
 @import "./layout/info_inicio";
@@ -35,7 +36,14 @@
 
 /*PRODUCTOS Y OUTLET*/
 
+@import "./layout/productos";
+
 @import "./components/cards_productos";
+
+@import "./layout/medios-de-pago.scss";
+
 
 /*FOOTER*/
 @import "./layout/footer";
+
+@import "./layout/mediaqueries.scss";
