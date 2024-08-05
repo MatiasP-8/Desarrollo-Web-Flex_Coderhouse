@@ -42,6 +42,22 @@
 
 @import "./layout/medios-de-pago.scss";
 
+/*CUSTOM*/
+
+@import "./layout/fondo-custom";
+@import "./layout/custom";
+@import "./layout/ventas";
+@import "./layout/pcs-armadas";
+
+
+/*CONTACTOS*/
+
+@import "./layout/contactos";
+
+@import "./components/form-contactos";
+
+@import "./components/cards-contactos";
+
 
 /*FOOTER*/
 @import "./layout/footer";

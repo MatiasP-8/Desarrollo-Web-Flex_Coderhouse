@@ -1,0 +1,81 @@
+
+    .formContainer{
+        width: 95%;
+        height: 600px;
+        background-color: #333;
+        /* background-image: url(../img/gabinete.png); */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        margin: 0 0 80px 0;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            input{
+                width: 200px;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                background-color: #555;
+                color: #fff;
+                font-size: 16px;
+                font-family: 'poppins';
+
+                &:focus { 
+                    outline: none !important;
+                    border-color: #719ECE;
+                    box-shadow: 0 0 10px #a0e602;
+                 }
+                
+            
+            }
+
+            textarea{
+                width: 200px;
+                height: 100px;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                background-color: #555;
+                color: #fff;
+                font-size: 16px;
+                resize: none;
+
+                &:focus { 
+                    outline: none !important;
+                    border-color: #719ECE;
+                    box-shadow: 0 0 10px #a0e602;
+                 }
+            }
+        }
+
+        .botonEnviar{
+            width: 200px;
+            height: 40px;
+            background-color: black;
+            color: #b8fe02;
+            font-size: 1rem;
+            font-family: 'orbitron';
+            font-weight: bold;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #a0e602; /* Color de fondo al pasar el cursor */
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Ajustar la sombra del texto */
+                box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Ajustar la sombra del botón */
+                color: white;
+                cursor: pointer;
+                transition: 1s;
+            }
+        }
+        
+    }

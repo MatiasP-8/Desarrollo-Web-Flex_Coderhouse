@@ -518,11 +518,6 @@ ul li {
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
-.infoCustom img{
-    width: 100px;
-    height: 100px;
-    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-}
 
 .seccionVentas{
     width: 100%;
@@ -751,6 +746,7 @@ textarea:focus {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .contactoCardContainer svg{

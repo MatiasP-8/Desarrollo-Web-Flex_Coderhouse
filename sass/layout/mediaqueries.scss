@@ -133,9 +133,8 @@
     color: gray;
     text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
 }
-}
 
-.tituloSeccionProductos h2{
+h2{
     text-align: center;
     font-size: 1.5rem;
     font-family: "Orbitron", sans-serif;
@@ -144,6 +143,8 @@
     color: black;
     text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
 }
+}
+
 .input-search-container{
     display: block;
     width: 100%;
@@ -157,6 +158,8 @@
         display: flex;
         justify-content: right;
         align-items: center;
+
+        
         input{
             width: 400px;
             height: 40px;
@@ -310,57 +313,59 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .seccionContainerCustom{
+        width: 85%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .imgContainer{
+            width: 30%;
+
+            img{
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+
+    .infoCustom{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            display: block;
+            font-family: 'orbitron';
+            font-weight: 800;
+            font-size: 2.1rem;
+            text-align: center;
+            color: #8a19fc;
+            text-shadow: 2px 2px 4px #b8fe02;
+        }
+
+        img{
+            width: 250px;
+            height: 150px;
+            filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+        }
+    }
+
+    .img2{
+        width: 30%;
+
+        img{
+            width: 250px;
+            height: 150px;
+            filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+        }
+    }
 }
 
-.seccionContainerCustom{
-    width: 85%;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imgContainer{
-    width: 30%;
-}
-
-.imgContainer img{
-    width: 250px;
-    height: 250px;
-}
-
-.infoCustom{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.infoCustom p{
-    display: block;
-    font-family: 'orbitron';
-    font-weight: 800;
-    font-size: 2.1rem;
-    text-align: center;
-    color: #8a19fc;
-    text-shadow: 2px 2px 4px #b8fe02;
-}
-.img2{
-    width: 30%;
-}
-
-.img2 img{
-    width: 250px;
-    height: 150px;
-    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-}
-
-.infoCustom img{
-    width: 250px;
-    height: 150px;
-    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-}
 
 .seccionVentas{
     width: 100%;
@@ -373,38 +378,40 @@
     justify-content: center;
     align-items: center;
     margin: 40px 0;
-}
 
-.infoSeccionventas{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+    .infoSeccionventas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .info1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 50px;
+
+            .parrafo1{
+                font-family: 'orbitron';
+                font-weight: bold;
+                font-size: 3.5rem;
+                text-align: center;
+                color: #a0e602;
+            }
+
+            .parrafo2{
+                font-family: 'orbitron';
+                font-weight: 500;
+                font-size: 1.2rem;
+                text-align: center;
+                color: #a0e602;
+                text-shadow: 2px 2px 4px black;
+            }
+        }
+    }
 
 
-.info1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 50px;
-}
-.info1 .parrafo1{
-    font-family: 'orbitron';
-    font-weight: bold;
-    font-size: 3.5rem;
-    text-align: center;
-    color: #a0e602;
-}
-
-.info1 .parrafo2{
-    font-family: 'orbitron';
-    font-weight: 500;
-    font-size: 1.2rem;
-    text-align: center;
-    color: #a0e602;
-    text-shadow: 2px 2px 4px black;
 }
 
 .seccionPcArmadas{
@@ -412,32 +419,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.seccionPcArmadas h2{
-    font-family: 'orbitron';
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-align: center;
-    color: #8a19fc;
-    text-shadow: 2px 2px 4px #8a19fc;
-    margin: 20px 0;
-}
+    h2{
+        font-family: 'orbitron';
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #8a19fc;
+        text-shadow: 2px 2px 4px #8a19fc;
+        margin: 20px 0;
+    }
 
-.imgPcs{
-    margin: 0 0 30px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.imgPcs img{
-    width: 320px;
-    height: 350px;
-}
+    .imgPcs{
+        margin: 0 0 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
 
-.btn{
-    display: block;
+        img{
+            width: 320px;
+            height: 350px;
+        }
+        
+    }
+
+    .btn{
+        display: block;
+    }
+    
 }
 
 /*FIN CUSTOM RESPONSIVE*/
@@ -451,7 +461,6 @@
     font-size: 2.3rem;
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
-    margin: 50px 0 0 0;
     color: gray;
     text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
 }
@@ -462,9 +471,10 @@
     font-size: 1.7rem;
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
-    margin: 10px 0 50px 0;
+    margin: 0px 0 50px 0;
     color: #b8fe02;
 }
+
 
 .seccion-formulario-contacto{
     width: 100%;
@@ -472,79 +482,148 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+
+    .titleContactos{
+        color: #b8fe02;
+        font-size: 1.5rem;
+        font-family: 'orbitron';
+        font-weight: 800;
+    }
+
+    .formContainer{
+        width: 550px;
+        height: 650px;
+        background-color: #333;
+        /* background-image: url(../img/gabinete.png); */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+
+        form{
+            input{
+                width: 350px;
+                height: 50px;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                background-color: #555;
+                color: #fff;
+                font-size: 16px;
+                font-family: 'poppins';
+            
+            }
+
+            textarea{
+                width: 350px;
+                height: 100px;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                background-color: #555;
+                color: #fff;
+                font-size: 16px;
+                resize: none;
+            }
+
+            .botonEnviar{
+                width: 350px;
+                height: 40px;
+                background-color: black;
+                color: #b8fe02;
+                font-size: 1rem;
+                font-family: 'orbitron';
+                font-weight: bold;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+    }
 }
 
-.titleContactos{
-    color: #b8fe02;
-    font-size: 1.5rem;
-    font-family: 'orbitron';
-    font-weight: 800;
-}
-
-.formContainer{
-    width: 550px;
-    height: 600px;
-    background-color: #333;
-    /* background-image: url(../img/gabinete.png); */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+.img-contacto-container{
+    width: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
-}
 
-.seccion-formulario-contacto form input{
-    width: 350px;
-    height: 50px;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #555;
-    color: #fff;
-    font-size: 16px;
-    font-family: 'poppins';
+    .contactoCardContainer{
+        width: 450px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        transition-duration: 1s;
 
-}
+        &:hover{
+            scale: 1.05;
+            cursor: pointer;
+            box-shadow: 0 0 10px #0a0a0a;
+        }
 
-.seccion-formulario-contacto form input::placeholder{
-    text-align: left;
-    color: gray;
-    font-family: 'orbitron';
-    font-weight: bold;
-    font-size: .9rem;
-}
+        svg{
+            width: 100px;
+            height: 100px;
+            filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+        }
 
-.seccion-formulario-contacto form textarea{
-    width: 350px;
-    height: 100px;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #555;
-    color: #fff;
-    font-size: 16px;
-    resize: none;
-}
+        h2{
+            color: gray;
+            font-size: 1.5rem;
+            font-family: 'orbitron';
+            font-weight: 700;
+            text-align: center;
+        }
 
-.seccion-formulario-contacto form textarea::placeholder{
-    text-align: left;
-    color: gray;
-    font-family: 'orbitron';
-    font-weight: bold;
-}
+        p{
+            font-size: 1.2rem;
+            font-family: 'poppins';
+            font-weight: 500;
+            text-align: center;
+        }
 
-.botonEnviar{
-    width: 350px;
-    height: 40px;
-    background-color: black;
-    color: #b8fe02;
-    font-size: 1rem;
-    font-family: 'orbitron';
-    font-weight: bold;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-}
+        #oficina{
+            color: #5CB85C;
+        }
+        
+        #telefono{
+            color: #1A5276;
+        }
+        
+        #mail{
+            color: #992B2B;
+        }
+    }
+
+   }
+
+
+
+
+
+
+// .seccion-formulario-contacto form input::placeholder{
+//     text-align: left;
+//     color: gray;
+//     font-family: 'orbitron';
+//     font-weight: bold;
+//     font-size: .9rem;
+// }
+
+
+// .seccion-formulario-contacto form textarea::placeholder{
+//     text-align: left;
+//     color: gray;
+//     font-family: 'orbitron';
+//     font-weight: bold;
+// }
+
 
 
 /*FIN ESTILOS CONTACTOS RESPONSIVE*/

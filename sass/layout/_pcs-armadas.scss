@@ -1,0 +1,31 @@
+.seccionPcArmadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-family: 'orbitron';
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        color: #8a19fc;
+        text-shadow: 2px 2px 4px #8a19fc;
+        margin: 20px 0;
+    }
+
+    .imgPcs{
+        margin: 0 0 10px 0;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        img{
+            width: 150px;
+            height: 200px;
+        }
+    }
+}

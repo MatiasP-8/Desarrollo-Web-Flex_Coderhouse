@@ -1,0 +1,44 @@
+.seccionVentas{
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/fondo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+
+    .infoSeccionventas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .info1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 50px;
+
+            .parrafo1{
+                font-family: 'orbitron';
+                font-weight: bold;
+                font-size: 3rem;
+                text-align: center;
+                color: #a0e602;
+            }
+
+            .parrafo2{
+                font-family: 'orbitron';
+                font-weight: 500;
+                font-size: 1rem;
+                text-align: center;
+                color: #a0e602;
+                text-shadow: 2px 2px 4px black;
+            }
+        }
+    }
+}

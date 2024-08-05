@@ -40,7 +40,7 @@ h2{
 
     input{
         @extend %placeholder;
-        width: 100px;
+        width: 150px;
         height: 40px;
         border: 1px solid lightgray;
         border-radius: 2px;
@@ -57,7 +57,7 @@ h2{
     height: 40px;
     background-color: black;
     position: relative;
-    left: -100px;
+    left: 0px;
     top: 0;
     color: #a0e602;
     font-weight: bold;
