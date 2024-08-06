@@ -1043,14 +1043,14 @@ footer .botonArriba svg {
     width: 250px;
     height: 250px;
   }
-  .section-custom .infoCustom {
+  .section-custom .seccionContainerCustom .infoCustom {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .section-custom .infoCustom p {
+  .section-custom .seccionContainerCustom .infoCustom p {
     display: block;
     font-family: "orbitron";
     font-weight: 800;
@@ -1059,15 +1059,15 @@ footer .botonArriba svg {
     color: #8a19fc;
     text-shadow: 2px 2px 4px #b8fe02;
   }
-  .section-custom .infoCustom img {
+  .section-custom .seccionContainerCustom .infoCustom img {
     width: 250px;
     height: 150px;
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   }
-  .section-custom .img2 {
+  .section-custom .seccionContainerCustom .img2 {
     width: 30%;
   }
-  .section-custom .img2 img {
+  .section-custom .seccionContainerCustom .img2 img {
     width: 250px;
     height: 150px;
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
