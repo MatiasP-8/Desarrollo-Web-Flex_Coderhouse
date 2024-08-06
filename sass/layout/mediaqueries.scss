@@ -634,13 +634,14 @@ h2{
 
 
 /*BOTON PARA VOLVER AL INICIO*/
-
-.botonUpContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
+footer{
+    .botonUpContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 48%;
+    }
 }
 }

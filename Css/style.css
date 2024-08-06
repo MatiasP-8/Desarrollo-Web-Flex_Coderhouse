@@ -742,7 +742,7 @@ footer .botonUpContainer {
   align-items: center;
   position: fixed;
   bottom: 0;
-  left: 40%;
+  left: 45%;
 }
 footer .botonArriba {
   width: 50px;
@@ -1271,13 +1271,13 @@ footer .botonArriba svg {
   /*FIN ESTILOS CONTACTOS RESPONSIVE*/
   /*ESTILOS FOOTER RESPONSIVE*/
   /*BOTON PARA VOLVER AL INICIO*/
-  .botonUpContainer {
+  footer .botonUpContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     bottom: 0;
-    left: 50%;
+    left: 48%;
   }
 }
 
