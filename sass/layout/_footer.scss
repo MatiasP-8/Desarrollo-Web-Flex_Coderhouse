@@ -1,3 +1,5 @@
+@import "../utilities/variables";
+
 footer{
     width: 100%;
     height: 100%;
@@ -28,18 +30,34 @@ footer{
                     outline: none;
                     border-radius: 50%;
                     margin: 5px 25px;
-                }
-            
+                    }
+
             #whatsapp{
                 background-color: darkgreen;
+                transition: 2s;
+
+                &:hover{ 
+                    rotate: (365deg);
+                    box-shadow: darkgreen 0px 3px 8px;
+                 }
             }
             
             #instagram{
-                background-color: #c13584
+                background-color: #c13584;
+                transition: 1s;
+
+                &:hover{ 
+                    box-shadow: #c13584 0px 3px 8px;
+                 }
             }
             
             #facebook{
                 background-color: #3b5998;
+                transition: 1s;
+
+                &:hover{ 
+                    box-shadow: #3b5998 0px 3px 20px;
+                 }
             }
         }
 
@@ -66,28 +84,31 @@ footer{
         position: fixed;
         bottom: 0;
         left: 45%;
+
+        .botonArriba {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border: none;
+            outline: none;
+            border-radius: 100%;
+            margin: 5px;
+            transition: 1s;
+    
+            &:hover{
+                box-shadow: -8px 2px 41px 7px rgba(255,255,255,0.75);
+            }
+            
+    
+            svg {
+                width: 30px;
+                height: 30px;
+                font-weight: bold;
+                color: white;
+            }
+        }
     }
     
-    .botonArriba {
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        border: none;
-        outline: none;
-        border-radius: 100%;
-        margin: 5px;
-        animation: vibrar 0.5s ease
-    }
     
-    &:hover{
-        animation: none;
-    }
-    
-    .botonArriba svg {
-        width: 30px;
-        height: 30px;
-        font-weight: bold;
-        color: white;
-    }
 }

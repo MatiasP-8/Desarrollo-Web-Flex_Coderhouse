@@ -1,3 +1,6 @@
+
+@import "../utilities/variables";
+
 @media (min-width:768px){
     /*RESPONSIVE INICIO*/
 
@@ -11,10 +14,12 @@
 
     /*FIN ESTILOS SECCION 1 DEL INDEX*/
 
-    .seccion-productos-destacados .cardContainer {
-        width: 300px;
-        height: 400px;
-        }
+    .seccion-productos-destacados{
+        .cardContainer {
+            width: 300px;
+            height: 400px;
+            }
+    }
     
 
  /*Inicio de seccion de informacion de pagos y envios del index*/
@@ -545,9 +550,9 @@ h2{
 }
 
 .img-contacto-container{
-    width: 40%;
+    width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -559,14 +564,6 @@ h2{
         justify-content: center;
         align-items: center;
         margin: 10px 0;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        transition-duration: 1s;
-
-        &:hover{
-            scale: 1.05;
-            cursor: pointer;
-            box-shadow: 0 0 10px #0a0a0a;
-        }
 
         svg{
             width: 100px;

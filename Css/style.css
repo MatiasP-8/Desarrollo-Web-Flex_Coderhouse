@@ -54,6 +54,7 @@ header ul .dropdown-item:hover {
   background-color: #a0e602;
 }
 
+/*INICIO*/
 /*SECCION CON IMAGEN DEL FONDO INDEX*/
 .fondoContainer {
   width: 100%;
@@ -91,7 +92,8 @@ header ul .dropdown-item:hover {
   flex-wrap: wrap;
   gap: 45px;
 }
-.seccion-productos-destacados .contenedor-productos-destacados .cardContainer {
+
+.cardContainer {
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   width: 250px;
@@ -103,7 +105,7 @@ header ul .dropdown-item:hover {
   align-items: center;
   text-align: center;
 }
-.seccion-productos-destacados .contenedor-productos-destacados .cardContainer img {
+.cardContainer img {
   width: 250px;
   height: 250px;
   border-radius: 3px;
@@ -111,11 +113,11 @@ header ul .dropdown-item:hover {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   transition: transform 1s, filter 1s;
 }
-.seccion-productos-destacados .contenedor-productos-destacados .cardContainer img:hover {
+.cardContainer img:hover {
   transform: scale(1.02);
   cursor: pointer;
 }
-.seccion-productos-destacados .contenedor-productos-destacados .cardContainer p {
+.cardContainer p {
   font-family: "Orbitron", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -123,7 +125,7 @@ header ul .dropdown-item:hover {
   color: gray;
   font-weight: 700;
 }
-.seccion-productos-destacados .contenedor-productos-destacados .cardContainer .botonVistaProducto {
+.cardContainer .botonVistaProducto {
   width: 140px;
   height: 40px;
   border: none;
@@ -131,18 +133,12 @@ header ul .dropdown-item:hover {
   background-color: #b8fe02;
   border-radius: 3px;
 }
-.seccion-productos-destacados .contenedor-productos-destacados .cardContainer .botonVistaProducto a {
+.cardContainer .botonVistaProducto a {
   font-family: "poppins";
   text-decoration: none;
   color: black;
   font-size: 0.9rem;
   font-weight: 700;
-}
-.seccion-productos-destacados .contenedor-productos-destacados .cardContainer .buttonContainer {
-  width: 50%;
-  display: flex;
-  justify-content: left;
-  align-items: left;
 }
 
 /*INFO DE PAGOS Y ENVIOS INDEX*/
@@ -239,19 +235,13 @@ header ul .dropdown-item:hover {
   margin-top: 40px;
   padding: 25px;
 }
-.marcasDisponibles .contenedorMarcas {
-  max-width: 75%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 15px;
-}
 .marcasDisponibles .contenedorMarcas img {
   width: 100px;
   height: 70px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
+/*--------FIN INICIO---------*/
 /*PRODUCTOS Y OUTLET*/
 .tituloSeccionProductos h1 {
   text-align: center;
@@ -346,14 +336,14 @@ header ul .dropdown-item:hover {
   width: 280px;
   height: 280px;
 }
-.cardProductos .titleProducto {
+.cardProductos .infoProductoContainer .titleProducto {
   text-align: center;
   font-size: 1rem;
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
   color: gray;
 }
-.cardProductos .infoProductos {
+.cardProductos .infoProductoContainer .infoProductos {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Orbitron", sans-serif;
@@ -412,6 +402,7 @@ header ul .dropdown-item:hover {
   height: 30px;
 }
 
+/*--------FIN PRODUCTOS---------*/
 /*CUSTOM*/
 .fondoContainer2 {
   width: 100%;
@@ -532,6 +523,7 @@ header ul .dropdown-item:hover {
   height: 200px;
 }
 
+/*--------FIN CUSTOM---------*/
 /*CONTACTOS*/
 .titleSeccionContactos {
   text-align: center;
@@ -550,7 +542,7 @@ header ul .dropdown-item:hover {
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
   margin: 10px 0 50px 0;
-  color: #b8fe02;
+  color: #a0e602;
 }
 
 .seccion-formulario-contacto {
@@ -654,7 +646,6 @@ header ul .dropdown-item:hover {
   justify-content: center;
   align-items: center;
   margin: 10px 0;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .img-contacto-container .contactoCardContainer svg {
   width: 100px;
@@ -684,6 +675,7 @@ header ul .dropdown-item:hover {
   color: #992B2B;
 }
 
+/*--------FIN CONTACTOS---------*/
 /*FOOTER*/
 footer {
   width: 100%;
@@ -717,12 +709,25 @@ footer .footerContainer .contactosFooterContainer .svgLogo {
 }
 footer .footerContainer .contactosFooterContainer #whatsapp {
   background-color: darkgreen;
+  transition: 2s;
+}
+footer .footerContainer .contactosFooterContainer #whatsapp:hover {
+  rotate: 365deg;
+  box-shadow: darkgreen 0px 3px 8px;
 }
 footer .footerContainer .contactosFooterContainer #instagram {
   background-color: #c13584;
+  transition: 1s;
+}
+footer .footerContainer .contactosFooterContainer #instagram:hover {
+  box-shadow: #c13584 0px 3px 8px;
 }
 footer .footerContainer .contactosFooterContainer #facebook {
   background-color: #3b5998;
+  transition: 1s;
+}
+footer .footerContainer .contactosFooterContainer #facebook:hover {
+  box-shadow: #3b5998 0px 3px 20px;
 }
 footer .footerContainer .imgLogoContainerFooter {
   display: flex;
@@ -744,21 +749,20 @@ footer .botonUpContainer {
   bottom: 0;
   left: 45%;
 }
-footer .botonArriba {
+footer .botonUpContainer .botonArriba {
   width: 50px;
   height: 50px;
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
   outline: none;
   border-radius: 100%;
   margin: 5px;
-  animation: vibrar 0.5s ease;
+  transition: 1s;
 }
-footer:hover {
-  animation: none;
+footer .botonUpContainer .botonArriba:hover {
+  box-shadow: -8px 2px 41px 7px rgba(255, 255, 255, 0.75);
 }
-footer .botonArriba svg {
+footer .botonUpContainer .botonArriba svg {
   width: 30px;
   height: 30px;
   font-weight: bold;
@@ -1219,9 +1223,9 @@ footer .botonArriba svg {
     border-radius: 5px;
   }
   .img-contacto-container {
-    width: 40%;
+    width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
@@ -1233,13 +1237,6 @@ footer .botonArriba svg {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition-duration: 1s;
-  }
-  .img-contacto-container .contactoCardContainer:hover {
-    scale: 1.05;
-    cursor: pointer;
-    box-shadow: 0 0 10px #0a0a0a;
   }
   .img-contacto-container .contactoCardContainer svg {
     width: 100px;
@@ -1280,5 +1277,7 @@ footer .botonArriba svg {
     left: 48%;
   }
 }
+/*--------FIN FOOTER---------*/
+/*VARIABLES*/
 
 /*# sourceMappingURL=style.css.map */

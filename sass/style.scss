@@ -12,13 +12,16 @@
 
 @import "./layout/header";
 
+/*INICIO*/
+
 /*SECCION CON IMAGEN DEL FONDO INDEX*/
 
-@import "./layout/fondopc";
+@import "./layout/fondo-inicio";
 
 /*PRODUCTOS DESTACADOS DEL INDEX*/
 
 @import "./layout/productos_destacados";
+@import "./components/cards-destacados";
 
 
 /*INFO DE PAGOS Y ENVIOS INDEX*/
@@ -34,6 +37,9 @@
 @import "./layout/marcas";
 
 
+/*--------FIN INICIO---------*/
+
+
 /*PRODUCTOS Y OUTLET*/
 
 @import "./layout/productos";
@@ -42,12 +48,16 @@
 
 @import "./layout/medios-de-pago.scss";
 
+/*--------FIN PRODUCTOS---------*/
+
 /*CUSTOM*/
 
 @import "./layout/fondo-custom";
 @import "./layout/custom";
 @import "./layout/ventas";
 @import "./layout/pcs-armadas";
+
+/*--------FIN CUSTOM---------*/
 
 
 /*CONTACTOS*/
@@ -58,8 +68,18 @@
 
 @import "./components/cards-contactos";
 
+/*--------FIN CONTACTOS---------*/
+
 
 /*FOOTER*/
 @import "./layout/footer";
 
 @import "./layout/mediaqueries.scss";
+
+/*--------FIN FOOTER---------*/
+
+
+/*VARIABLES*/
+
+@import "./utilities/variables";
+

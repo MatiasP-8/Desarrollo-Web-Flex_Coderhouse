@@ -1,3 +1,5 @@
+@import "../utilities/variables";
+
 .marcasDisponibles {
     width: 100%;
     height: 100%;
@@ -8,16 +10,10 @@
     padding: 25px;
 
     .contenedorMarcas{
-        max-width: 75%;
-        display: grid;
-       grid-template-columns: 1fr 1fr;
-       grid-template-rows: 1fr 1fr 1fr;
-       gap: 15px;
-
        img{
         width: 100px;
         height: 70px;
         filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     }
     }
-} 
+}
