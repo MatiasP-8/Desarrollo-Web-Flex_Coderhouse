@@ -86,6 +86,7 @@ footer{
         left: 45%;
 
         .botonArriba {
+            background-color: $color-principal;
             width: 50px;
             height: 50px;
             padding: 10px;
@@ -94,7 +95,7 @@ footer{
             outline: none;
             border-radius: 100%;
             margin: 5px;
-            transition: 1s;
+            animation: vibrar 1s ease-in;
     
             &:hover{
                 box-shadow: -8px 2px 41px 7px rgba(255,255,255,0.75);
@@ -102,13 +103,37 @@ footer{
             
     
             svg {
+                background-color: $color-principal;
                 width: 30px;
                 height: 30px;
                 font-weight: bold;
                 color: white;
+                border-radius: 30px;
+                box-shadow: 1px 1px 16px 3px rgba(0,0,0,0.35);
             }
         }
     }
+
+    @keyframes vibrar {
+        0% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(-3px) rotate(-1deg);
+        }
+        40% {
+          transform: translateX(3px) rotate(1deg);
+        }
+        60% {
+          transform: translateX(-2px) rotate(-1deg);
+        }
+        80% {
+          transform: translateX(2px) rotate(1deg);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      } 
     
     
 }

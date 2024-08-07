@@ -3,36 +3,56 @@
     .formContainer{
         width: 95%;
         height: 600px;
-        background-color: #333;
+        background-color: white;
         /* background-image: url(../img/gabinete.png); */
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        box-shadow: 1px 1px 16px 3px rgba(0,0,0,0.35);
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 2px;
-        margin: 0 0 80px 0;
+        margin: 50px 0 80px 0;
+
+
+        %placeholder-inputs-form {
+            color: black;
+            font-size: .8rem;
+            font-family: $fuente-poppins;
+            font-weight: bold;
+            text-align: left;
+            padding: 5px;
+          }
 
         form{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 25px;
+            gap: 15px;
+
+            h2{
+                color: black;
+                font-size: 1.3rem;
+                font-family: $fuente-orbitron;
+                font-weight: bold;
+                text-align: center;
+                text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
+            }
+             
 
             input{
                 width: 200px;
                 padding: 10px;
                 border: none;
-                border-radius: 4px;
-                background-color: #555;
+                background-color: lightgray;
+                border-radius: 2px;
                 color: #fff;
                 font-size: 16px;
-                font-family: 'poppins';
+                font-family: $fuente-poppins;
+                @extend %placeholder-inputs-form;
 
                 &:focus { 
                     outline: none !important;
-                    border-color: #719ECE;
-                    box-shadow: 0 0 10px #a0e602;
+                    box-shadow: 0 0 10px $color-principal;
                  }
                 
             
@@ -43,16 +63,16 @@
                 height: 100px;
                 padding: 10px;
                 border: none;
-                border-radius: 4px;
-                background-color: #555;
+                background-color: lightgray;
+                border-radius: 2px;
                 color: #fff;
                 font-size: 16px;
                 resize: none;
+                @extend %placeholder-inputs-form;
 
                 &:focus { 
                     outline: none !important;
-                    border-color: #719ECE;
-                    box-shadow: 0 0 10px #a0e602;
+                    box-shadow: 0 0 10px $color-principal;
                  }
             }
         }
@@ -61,16 +81,16 @@
             width: 200px;
             height: 40px;
             background-color: black;
-            color: #b8fe02;
+            color: white;
             font-size: 1rem;
-            font-family: 'orbitron';
+            font-family: $fuente-orbitron;
             font-weight: bold;
             outline: none;
             border: none;
             border-radius: 5px;
 
             &:hover {
-                background-color: #a0e602; /* Color de fondo al pasar el cursor */
+                background-color: $color-principal; /* Color de fondo al pasar el cursor */
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Ajustar la sombra del texto */
                 box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Ajustar la sombra del botón */
                 color: white;

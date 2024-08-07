@@ -18,14 +18,14 @@
         .titleProducto{
             text-align: center;
             font-size: 1rem;
-            font-family: "Orbitron", sans-serif;
+            font-family: $fuente-orbitron;
             font-weight: bold;
             color: gray;
         }
         .infoProductos{
             text-align: center;
             font-size: .9rem;
-            font-family: "Orbitron", sans-serif;
+            font-family: $fuente-orbitron;
             color: black;
             padding: 10px;
             font-weight: bold;

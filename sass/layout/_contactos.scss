@@ -3,10 +3,10 @@
 
 .titleSeccionContactos{
     text-align: center;
-    font-size: 2rem;
-    font-family: "Orbitron", sans-serif;
+    font-size: 1.5rem;
+    font-family: $fuente-orbitron;
     font-weight: bold;
-    margin: 70px 0 0 0;
+    margin: 12px 0 0 0;
     color: gray;
     text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
 }
@@ -14,25 +14,32 @@
 .subtitle-seccion-contactos{
     text-align: center;
     text-align: center;
-    font-size: 1.7rem;
-    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    font-family: $fuente-orbitron;
     font-weight: bold;
-    margin: 10px 0 50px 0;
+    margin: 10px 0 10px 0;
     color: $color-principal;
 }
 
 .seccion-formulario-contacto{
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
-    .titleContactos{
-        color: #b8fe02;
-        font-size: 1.3rem;
-        font-family: 'orbitron';
-        font-weight: 500;
-        text-align: center;
+    .seccion-contactos{
+        background-color: #F5F5F5;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.mapa-container{
+    iframe{
+        width: 300px;
+        height: 400px;
     }
 }

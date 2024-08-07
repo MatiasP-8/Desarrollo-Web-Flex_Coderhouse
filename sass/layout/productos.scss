@@ -6,7 +6,7 @@
     h1{
     text-align: center;
     font-size: 1.3rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: $fuente-orbitron;
     font-weight: bold;
     margin: 50px 0;
     color: gray;
@@ -16,7 +16,7 @@
 h2{
     text-align: center;
     font-size: 1.3rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: $fuente-orbitron;
     font-weight: bold;
     margin: 50px 0;
     color: #b8fe02;
@@ -27,7 +27,7 @@ h2{
 %placeholder {
     color: black;
     font-size: .8rem;
-    font-family: 'poppins';
+    font-family: $fuente-poppins;
     font-weight: 600;
     text-align: left;
     padding: 5px;
@@ -51,7 +51,7 @@ h2{
         &:focus{
             outline: none !important;
             border-color: #719ECE;
-            box-shadow: 0 0 10px #a0e602;
+            box-shadow: 0 0 10px $color-principal;
         }
     }
 
@@ -62,14 +62,14 @@ h2{
     position: relative;
     left: 0px;
     top: 0;
-    color: #a0e602;
+    color: $color-principal;
     font-weight: bold;
     border: none;
     outline: none;
     border-radius: 2px;
 
     &:hover{
-        background-color: #a0e602;
+        background-color: $color-principal;
         color: black;
         transition: 1s;
     }

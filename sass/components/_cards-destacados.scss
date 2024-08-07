@@ -1,3 +1,6 @@
+@import "../utilities/variables";  
+
+
 .cardContainer {
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -27,7 +30,7 @@
       
 
     p {
-        font-family: "Orbitron", sans-serif;
+        font-family: $fuente-orbitron;
         font-size: 1rem;
         font-weight: 600;
         padding: 0 0 20px 0;
@@ -40,15 +43,25 @@
         height: 40px;
         border: none;
         outline: none;
-        background-color: #b8fe02;
+        background-color: $color-principal;
         border-radius: 3px;
+        transition: 1s;
+
+        &:hover{
+          background-color: black;
+        }
 
         a {
-            font-family: 'poppins';
+            font-family: $fuente-poppins;
             text-decoration: none;
             color: black;
             font-size: .9rem;
             font-weight: 700;
+            transition: 1s;
+
+            &:hover{
+              color: $color-principal;
+            }
         }
     }
 

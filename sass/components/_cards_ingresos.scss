@@ -4,7 +4,7 @@
     .titleNuevosIngresos{
         text-align: center;
         font-size: 2.8rem;
-        font-family: "Orbitron", sans-serif;
+        font-family: $fuente-orbitron;
         font-weight: bold;
         margin-top: 70px;
         color: gray;
@@ -49,7 +49,7 @@
 
             .titleCardContainer{
                 font-size: 1rem;
-                font-family: "Orbitron", sans-serif;
+                font-family: $fuente-orbitron;
                 color: gray;
                 text-align: center;
                 margin: 5px 0;
@@ -59,7 +59,7 @@
                 text-align: center;
                 font-size: .8rem;
                 font-weight: bold;
-                font-family: "Orbitron", sans-serif;
+                font-family: $fuente-orbitron;
                 margin: 10px ;
             }
 
@@ -80,7 +80,7 @@
             }
             
             .botonLanzamiento a {
-                font-family: 'poppins';
+                font-family: $fuente-poppins;
                 font-weight: 700;
                 text-decoration: none;
                 color: #b8fe02;

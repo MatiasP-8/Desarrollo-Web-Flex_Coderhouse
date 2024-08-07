@@ -27,19 +27,19 @@
             margin: 0 50px;
 
             .parrafo1{
-                font-family: 'orbitron';
+                font-family: $fuente-orbitron;
                 font-weight: bold;
                 font-size: 3rem;
                 text-align: center;
-                color: #a0e602;
+                color: $color-principal;
             }
 
             .parrafo2{
-                font-family: 'orbitron';
+                font-family: $fuente-orbitron;
                 font-weight: 500;
                 font-size: 1rem;
                 text-align: center;
-                color: #a0e602;
+                color: $color-principal;
                 text-shadow: 2px 2px 4px black;
             }
         }

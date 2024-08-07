@@ -78,7 +78,7 @@ header ul .dropdown-item:hover {
 .seccion-productos-destacados .titleProductosDestacados {
   text-align: center;
   font-size: 2.3rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   font-weight: bold;
   margin-bottom: 40px;
   color: gray;
@@ -118,7 +118,7 @@ header ul .dropdown-item:hover {
   cursor: pointer;
 }
 .cardContainer p {
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   font-size: 1rem;
   font-weight: 600;
   padding: 0 0 20px 0;
@@ -130,8 +130,12 @@ header ul .dropdown-item:hover {
   height: 40px;
   border: none;
   outline: none;
-  background-color: #b8fe02;
+  background-color: #a0e602;
   border-radius: 3px;
+  transition: 1s;
+}
+.cardContainer .botonVistaProducto:hover {
+  background-color: black;
 }
 .cardContainer .botonVistaProducto a {
   font-family: "poppins";
@@ -139,6 +143,10 @@ header ul .dropdown-item:hover {
   color: black;
   font-size: 0.9rem;
   font-weight: 700;
+  transition: 1s;
+}
+.cardContainer .botonVistaProducto a:hover {
+  color: #a0e602;
 }
 
 /*INFO DE PAGOS Y ENVIOS INDEX*/
@@ -150,7 +158,7 @@ header ul .dropdown-item:hover {
 .seccionNuevosIngresosTitle .titleNuevosIngresos {
   text-align: center;
   font-size: 2.8rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   font-weight: bold;
   margin-top: 70px;
   color: gray;
@@ -192,7 +200,7 @@ header ul .dropdown-item:hover {
 }
 .seccion-nuevos-ingresos .cards-nuevos-ingresos-container .cardNuevosIngresos .titleCardContainer {
   font-size: 1rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   color: gray;
   text-align: center;
   margin: 5px 0;
@@ -201,7 +209,7 @@ header ul .dropdown-item:hover {
   text-align: center;
   font-size: 0.8rem;
   font-weight: bold;
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   margin: 10px;
 }
 .seccion-nuevos-ingresos .cards-nuevos-ingresos-container .cardNuevosIngresos .botonLanzamiento {
@@ -246,7 +254,7 @@ header ul .dropdown-item:hover {
 .tituloSeccionProductos h1 {
   text-align: center;
   font-size: 1.3rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   font-weight: bold;
   margin: 50px 0;
   color: gray;
@@ -255,7 +263,7 @@ header ul .dropdown-item:hover {
 .tituloSeccionProductos h2 {
   text-align: center;
   font-size: 1.3rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   font-weight: bold;
   margin: 50px 0;
   color: #b8fe02;
@@ -339,14 +347,14 @@ header ul .dropdown-item:hover {
 .cardProductos .infoProductoContainer .titleProducto {
   text-align: center;
   font-size: 1rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   font-weight: bold;
   color: gray;
 }
 .cardProductos .infoProductoContainer .infoProductos {
   text-align: center;
   font-size: 0.9rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   color: black;
   padding: 10px;
   font-weight: bold;
@@ -385,7 +393,7 @@ header ul .dropdown-item:hover {
 .seccion-medios-de-pago .titleMediosDePago {
   text-align: center;
   font-size: 1rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "orbitron";
   color: black;
   padding: 10px;
   font-weight: bold;
@@ -527,10 +535,10 @@ header ul .dropdown-item:hover {
 /*CONTACTOS*/
 .titleSeccionContactos {
   text-align: center;
-  font-size: 2rem;
-  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  font-family: "orbitron";
   font-weight: bold;
-  margin: 70px 0 0 0;
+  margin: 12px 0 0 0;
   color: gray;
   text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
 }
@@ -538,60 +546,80 @@ header ul .dropdown-item:hover {
 .subtitle-seccion-contactos {
   text-align: center;
   text-align: center;
-  font-size: 1.7rem;
-  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-family: "orbitron";
   font-weight: bold;
-  margin: 10px 0 50px 0;
+  margin: 10px 0 10px 0;
   color: #a0e602;
 }
 
 .seccion-formulario-contacto {
   width: 100%;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.seccion-formulario-contacto .seccion-contactos {
+  background-color: #F5F5F5;
+  width: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.seccion-formulario-contacto .titleContactos {
-  color: #b8fe02;
-  font-size: 1.3rem;
-  font-family: "orbitron";
-  font-weight: 500;
-  text-align: center;
+
+.mapa-container iframe {
+  width: 300px;
+  height: 400px;
 }
 
 .formContainer {
   width: 95%;
   height: 600px;
-  background-color: #333;
+  background-color: white;
   /* background-image: url(../img/gabinete.png); */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: 1px 1px 16px 3px rgba(0, 0, 0, 0.35);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  margin: 0 0 80px 0;
+  margin: 50px 0 80px 0;
+}
+.formContainer form textarea, .formContainer form input {
+  color: black;
+  font-size: 0.8rem;
+  font-family: "poppins";
+  font-weight: bold;
+  text-align: left;
+  padding: 5px;
 }
 .formContainer form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
+}
+.formContainer form h2 {
+  color: black;
+  font-size: 1.3rem;
+  font-family: "orbitron";
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
 }
 .formContainer form input {
   width: 200px;
   padding: 10px;
   border: none;
-  border-radius: 4px;
-  background-color: #555;
+  background-color: lightgray;
+  border-radius: 2px;
   color: #fff;
   font-size: 16px;
   font-family: "poppins";
 }
 .formContainer form input:focus {
   outline: none !important;
-  border-color: #719ECE;
   box-shadow: 0 0 10px #a0e602;
 }
 .formContainer form textarea {
@@ -599,22 +627,21 @@ header ul .dropdown-item:hover {
   height: 100px;
   padding: 10px;
   border: none;
-  border-radius: 4px;
-  background-color: #555;
+  background-color: lightgray;
+  border-radius: 2px;
   color: #fff;
   font-size: 16px;
   resize: none;
 }
 .formContainer form textarea:focus {
   outline: none !important;
-  border-color: #719ECE;
   box-shadow: 0 0 10px #a0e602;
 }
 .formContainer .botonEnviar {
   width: 200px;
   height: 40px;
   background-color: black;
-  color: #b8fe02;
+  color: white;
   font-size: 1rem;
   font-family: "orbitron";
   font-weight: bold;
@@ -629,50 +656,6 @@ header ul .dropdown-item:hover {
   color: white;
   cursor: pointer;
   transition: 1s;
-}
-
-.img-contacto-container {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.img-contacto-container .contactoCardContainer {
-  width: 300px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-}
-.img-contacto-container .contactoCardContainer svg {
-  width: 100px;
-  height: 100px;
-  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-}
-.img-contacto-container .contactoCardContainer h2 {
-  color: gray;
-  font-size: 1.5rem;
-  font-family: "orbitron";
-  font-weight: 700;
-  text-align: center;
-}
-.img-contacto-container .contactoCardContainer p {
-  font-size: 1.2rem;
-  font-family: "poppins";
-  font-weight: 500;
-  text-align: center;
-}
-.img-contacto-container .contactoCardContainer #oficina {
-  color: #5CB85C;
-}
-.img-contacto-container .contactoCardContainer #telefono {
-  color: #1A5276;
-}
-.img-contacto-container .contactoCardContainer #mail {
-  color: #992B2B;
 }
 
 /*--------FIN CONTACTOS---------*/
@@ -750,6 +733,7 @@ footer .botonUpContainer {
   left: 45%;
 }
 footer .botonUpContainer .botonArriba {
+  background-color: #a0e602;
   width: 50px;
   height: 50px;
   padding: 10px;
@@ -757,16 +741,39 @@ footer .botonUpContainer .botonArriba {
   outline: none;
   border-radius: 100%;
   margin: 5px;
-  transition: 1s;
+  animation: vibrar 1s ease-in;
 }
 footer .botonUpContainer .botonArriba:hover {
   box-shadow: -8px 2px 41px 7px rgba(255, 255, 255, 0.75);
 }
 footer .botonUpContainer .botonArriba svg {
+  background-color: #a0e602;
   width: 30px;
   height: 30px;
   font-weight: bold;
   color: white;
+  border-radius: 30px;
+  box-shadow: 1px 1px 16px 3px rgba(0, 0, 0, 0.35);
+}
+@keyframes vibrar {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-3px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(3px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media (min-width: 768px) {
@@ -870,7 +877,7 @@ footer .botonUpContainer .botonArriba svg {
   .tituloSeccionProductos h1 {
     text-align: center;
     font-size: 2rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: "orbitron";
     font-weight: bold;
     margin: 50px 0;
     color: gray;
@@ -879,7 +886,7 @@ footer .botonUpContainer .botonArriba svg {
   .tituloSeccionProductos h2 {
     text-align: center;
     font-size: 1.5rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: "orbitron";
     font-weight: bold;
     margin: 50px 0;
     color: black;
@@ -951,14 +958,14 @@ footer .botonUpContainer .botonArriba svg {
   .section-productos-container .grillaProductosContainer .cardProductos .titleProducto {
     text-align: center;
     font-size: 1rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: "orbitron";
     font-weight: bold;
     color: gray;
   }
   .section-productos-container .grillaProductosContainer .cardProductos .infoProductos {
     text-align: center;
     font-size: 0.9rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: "orbitron";
     color: black;
     padding: 10px;
     font-weight: bold;
@@ -976,7 +983,7 @@ footer .botonUpContainer .botonArriba svg {
   .seccion-medios-de-pago .titleMediosDePago {
     text-align: center;
     font-size: 1.7rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: "orbitron";
     color: black;
     padding: 10px;
     font-weight: bold;
@@ -1150,39 +1157,41 @@ footer .botonUpContainer .botonArriba svg {
   .titleSeccionContactos {
     text-align: center;
     font-size: 2.3rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: "orbitron";
     font-weight: bold;
-    color: gray;
+    color: black;
     text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
   }
   .subtitle-seccion-contactos {
     text-align: center;
     text-align: center;
     font-size: 1.7rem;
-    font-family: "Orbitron", sans-serif;
+    font-family: "orbitron";
     font-weight: bold;
-    margin: 0px 0 50px 0;
-    color: #b8fe02;
+    margin: 0px 0 10px 0;
+    color: #a0e602;
   }
   .seccion-formulario-contacto {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
-  .seccion-formulario-contacto .titleContactos {
-    color: #b8fe02;
-    font-size: 1.5rem;
-    font-family: "orbitron";
-    font-weight: 800;
+  .seccion-formulario-contacto .seccion-contactos {
+    background-color: #F5F5F5;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
   .seccion-formulario-contacto .formContainer {
     width: 550px;
-    height: 650px;
-    background-color: #333;
+    height: 575px;
     /* background-image: url(../img/gabinete.png); */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: 1px 1px 16px 3px rgba(0, 0, 0, 0.35);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1193,8 +1202,7 @@ footer .botonUpContainer .botonArriba svg {
     height: 50px;
     padding: 10px;
     border: none;
-    border-radius: 4px;
-    background-color: #555;
+    background-color: lightgray;
     color: #fff;
     font-size: 16px;
     font-family: "poppins";
@@ -1204,8 +1212,7 @@ footer .botonUpContainer .botonArriba svg {
     height: 100px;
     padding: 10px;
     border: none;
-    border-radius: 4px;
-    background-color: #555;
+    background-color: lightgray;
     color: #fff;
     font-size: 16px;
     resize: none;
@@ -1214,7 +1221,7 @@ footer .botonUpContainer .botonArriba svg {
     width: 350px;
     height: 40px;
     background-color: black;
-    color: #b8fe02;
+    color: white;
     font-size: 1rem;
     font-family: "orbitron";
     font-weight: bold;
@@ -1222,48 +1229,17 @@ footer .botonUpContainer .botonArriba svg {
     border: none;
     border-radius: 5px;
   }
-  .img-contacto-container {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  .seccion-formulario-contacto .formContainer form .botonEnviar:hover {
+    background-color: #a0e602; /* Color de fondo al pasar el cursor */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Ajustar la sombra del texto */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Ajustar la sombra del botón */
+    color: white;
+    cursor: pointer;
+    transition: 1s;
   }
-  .img-contacto-container .contactoCardContainer {
-    width: 450px;
-    height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-  }
-  .img-contacto-container .contactoCardContainer svg {
-    width: 100px;
-    height: 100px;
-    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-  }
-  .img-contacto-container .contactoCardContainer h2 {
-    color: gray;
-    font-size: 1.5rem;
-    font-family: "orbitron";
-    font-weight: 700;
-    text-align: center;
-  }
-  .img-contacto-container .contactoCardContainer p {
-    font-size: 1.2rem;
-    font-family: "poppins";
-    font-weight: 500;
-    text-align: center;
-  }
-  .img-contacto-container .contactoCardContainer #oficina {
-    color: #5CB85C;
-  }
-  .img-contacto-container .contactoCardContainer #telefono {
-    color: #1A5276;
-  }
-  .img-contacto-container .contactoCardContainer #mail {
-    color: #992B2B;
+  .mapa-container iframe {
+    width: 500px;
+    height: 600px;
   }
   /*FIN ESTILOS CONTACTOS RESPONSIVE*/
   /*ESTILOS FOOTER RESPONSIVE*/
