@@ -1,4 +1,5 @@
 @import "../utilities/variables";  
+@import "./boton-vista";
 
 
 .cardContainer {
@@ -39,13 +40,7 @@
     }
 
     .botonVistaProducto {
-        width: 140px;
-        height: 40px;
-        border: none;
-        outline: none;
-        background-color: $color-principal;
-        border-radius: 3px;
-        transition: 1s;
+      @include botonVistaProductos;
 
         &:hover{
           background-color: black;
