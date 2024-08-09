@@ -44,10 +44,10 @@
             cursor: pointer;
         }
         a {
-            font-family: 'poppins';
+            font-family: $fuente-poppins;
             font-weight: 700;
             text-decoration: none;
-            color: #b8fe02;
+            color: $color-principal;
         }
 }
 }

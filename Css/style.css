@@ -230,7 +230,7 @@ header ul .dropdown-item:hover {
   font-family: "poppins";
   font-weight: 700;
   text-decoration: none;
-  color: #b8fe02;
+  color: #a0e602;
 }
 
 /*MARCAS DISPONIBLES*/
@@ -266,7 +266,7 @@ header ul .dropdown-item:hover {
   font-family: "orbitron";
   font-weight: bold;
   margin: 50px 0;
-  color: #b8fe02;
+  color: #a0e602;
   text-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.7);
 }
 
@@ -377,7 +377,7 @@ header ul .dropdown-item:hover {
   font-family: "poppins";
   font-weight: 700;
   text-decoration: none;
-  color: #b8fe02;
+  color: #a0e602;
 }
 
 .seccion-medios-de-pago {
@@ -430,7 +430,7 @@ header ul .dropdown-item:hover {
   font-size: 2rem;
   text-align: center;
   color: white;
-  /* color: #8a19fc; */
+  /* color: $purple; */
   text-shadow: 2px 2px 4px #8a19fc;
 }
 
@@ -601,7 +601,7 @@ header ul .dropdown-item:hover {
   gap: 15px;
 }
 .formContainer form h2 {
-  color: black;
+  color: #8a19fc;
   font-size: 1.3rem;
   font-family: "orbitron";
   font-weight: bold;
