@@ -7,18 +7,42 @@
 
      /*SECCION 1 DEL INDEX RESPONSIVE*/
 
-     .fondoContainer {
-        width: 100%;
-        height: 350px;
-    }
+    //  .fondoContainer {
+    //     width: 100%;
+    //     height: 350px;
+    // }
 
     /*FIN ESTILOS SECCION 1 DEL INDEX*/
 
-    .seccion-productos-destacados{
-        .cardContainer {
-            width: 300px;
-            height: 400px;
+    .seccion-productos-destacados {
+        .contenedor-productos-destacados {
+            max-width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            .cardContainer {
+                width: 380px;
+                height: 400px;
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 3px;
+                    margin: 0 25px;
+                    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+                    transition: transform 1s, filter 1s; // Define la transición para las propiedades que cambian
+              
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            
             }
+        }
+    
     }
     
 
@@ -522,7 +546,7 @@ h2{
                 padding: 10px;
                 border: none;
                 background-color: lightgray;
-                color: #fff;
+                color: black;
                 font-size: 16px;
                 font-family: $fuente-poppins;
             
@@ -534,7 +558,7 @@ h2{
                 padding: 10px;
                 border: none;
                 background-color: lightgray;
-                color: #fff;
+                color: black;
                 font-size: 16px;
                 resize: none;
             }

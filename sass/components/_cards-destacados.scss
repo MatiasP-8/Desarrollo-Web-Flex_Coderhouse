@@ -5,8 +5,8 @@
 .cardContainer {
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    width: 250px;
-    height: 400px;
+    width: 150px;
+    height: 300px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -15,8 +15,8 @@
     text-align: center;
 
     img {
-      width: 250px;
-      height: 250px;
+      width: 150px;
+      height: 150px;
       border-radius: 3px;
       margin: 0 25px;
       filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
@@ -32,7 +32,7 @@
 
     p {
         font-family: $fuente-orbitron;
-        font-size: 1rem;
+        font-size: .7rem;
         font-weight: 600;
         padding: 0 0 20px 0;
         color: gray;
