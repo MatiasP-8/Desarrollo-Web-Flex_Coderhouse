@@ -23,10 +23,6 @@ header {
             font-family: $fuente-orbitron;
             font-weight: 700;
             text-decoration: none;
-
-            &:hover{
-                border-bottom: 2px solid $color-principal
-            }
         }
         .colorNavBar{
             color: $color-principal;

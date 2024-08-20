@@ -7,25 +7,25 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 5px;
+    gap: 2px;
 
     img{
         background-color: #F5F5F5;
-        width: 280px;
-        height: 280px;
+        width: 130px;
+        height: 130px;
     }
 
     .infoProductoContainer{
         .titleProducto{
             text-align: center;
-            font-size: 1rem;
+            font-size: .6rem;
             font-family: $fuente-orbitron;
             font-weight: bold;
             color: gray;
         }
         .infoProductos{
             text-align: center;
-            font-size: .9rem;
+            font-size: .6rem;
             font-family: $fuente-orbitron;
             color: black;
             padding: 10px;

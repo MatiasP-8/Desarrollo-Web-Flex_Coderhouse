@@ -36,9 +36,6 @@ header ul .nav-item {
   font-weight: 700;
   text-decoration: none;
 }
-header ul .nav-item:hover {
-  border-bottom: 2px solid #a0e602;
-}
 header ul .colorNavBar {
   color: #a0e602;
 }
@@ -327,10 +324,10 @@ header ul .dropdown-item:hover {
   align-items: center;
 }
 .section-productos-container .grillaProductosContainer {
-  width: 70%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-items: center;
 }
@@ -341,23 +338,23 @@ header ul .dropdown-item:hover {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  gap: 5px;
+  gap: 2px;
 }
 .cardProductos img {
   background-color: #F5F5F5;
-  width: 280px;
-  height: 280px;
+  width: 130px;
+  height: 130px;
 }
 .cardProductos .infoProductoContainer .titleProducto {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-family: "orbitron";
   font-weight: bold;
   color: gray;
 }
 .cardProductos .infoProductoContainer .infoProductos {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   font-family: "orbitron";
   color: black;
   padding: 10px;
@@ -401,7 +398,7 @@ header ul .dropdown-item:hover {
   color: black;
   padding: 10px;
   font-weight: bold;
-  text-shadow: 0rem 0.1rem 0.2rem rgba(115, 250, 5, 0.7);
+  text-shadow: 0rem 0.1rem 0.2rem #8a19fc;
 }
 .seccion-medios-de-pago .mediosDePago {
   display: flex;
@@ -410,8 +407,8 @@ header ul .dropdown-item:hover {
   align-items: center;
 }
 .seccion-medios-de-pago .mediosDePago img {
-  width: 60px;
-  height: 30px;
+  width: 70px;
+  height: 50px;
 }
 
 /*--------FIN PRODUCTOS---------*/
@@ -782,6 +779,9 @@ footer .botonUpContainer .botonArriba svg {
 
 @media (min-width: 768px) {
   /*RESPONSIVE INICIO*/
+  .nav-item:hover {
+    border-bottom: 2px solid #a0e602;
+  }
   /*SECCION 1 DEL INDEX RESPONSIVE*/
   /*FIN ESTILOS SECCION 1 DEL INDEX*/
   .seccion-productos-destacados .contenedor-productos-destacados {
@@ -1000,23 +1000,22 @@ footer .botonUpContainer .botonArriba svg {
   }
   .seccion-medios-de-pago .titleMediosDePago {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-family: "orbitron";
     color: black;
     padding: 10px;
     font-weight: bold;
-    text-shadow: 0rem 0.1rem 0.2rem rgba(115, 250, 5, 0.7);
+    text-shadow: 0rem 0.1rem 0.2rem #8a19fc;
   }
   .seccion-medios-de-pago .mediosDePago {
-    max-width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
   .seccion-medios-de-pago .mediosDePago img {
-    width: 130px;
-    height: 100px;
+    width: 200px;
+    height: 120px;
   }
   /*FIN DE PRODUCTOS RESPOPNSIVE*/
   /*ESTILOS CUSTOM PC RESPONSIVE*/
@@ -1093,7 +1092,7 @@ footer .botonUpContainer .botonArriba svg {
   }
   .seccionVentas {
     width: 100%;
-    height: 350px;
+    height: 400px;
     background-image: url(../img/fondo3.png);
     background-size: cover;
     background-repeat: no-repeat;
