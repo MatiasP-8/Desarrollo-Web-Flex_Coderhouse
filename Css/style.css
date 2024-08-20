@@ -337,7 +337,7 @@ header ul .dropdown-item:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 10px 2px 2px 5px;
 }
 .cardProductos img {
   background-color: #F5F5F5;
