@@ -18,11 +18,15 @@ header {
         margin: 0 25px;
     }
         .nav-item {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             /* font-family: "Orbitron", sans-serif; */
             font-family: $fuente-orbitron;
             font-weight: 700;
             text-decoration: none;
+
+            &:hover{
+                border-bottom: 2px solid $color-principal
+            }
         }
         .colorNavBar{
             color: $color-principal;

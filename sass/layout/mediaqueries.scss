@@ -298,17 +298,6 @@ h2{
     }
 }
 
-.seccion-envios{
-    display: block;
-    width: 100%;
-    height: 100px;
-    background-image: url('../img/envios.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 20px 0 0 0;
-}
-
 /*FIN DE PRODUCTOS RESPOPNSIVE*/
 
 /*ESTILOS CUSTOM PC RESPONSIVE*/
@@ -604,6 +593,17 @@ h2{
 
 /*BOTON PARA VOLVER AL INICIO*/
 footer{
+    .footerContainer{
+        .seccion-envios{
+            display: block;
+            width: 100%;
+            height: 100px;
+            background-image: url('../img/envios.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
     .botonUpContainer {
         display: flex;
         justify-content: center;
