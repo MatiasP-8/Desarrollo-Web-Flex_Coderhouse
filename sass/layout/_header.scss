@@ -23,12 +23,16 @@ header {
             font-family: $fuente-orbitron;
             font-weight: 700;
             text-decoration: none;
+
+            .nav-link{
+                color: #3A3A3A;
+            }
         }
         .colorNavBar{
             color: $color-principal;
         }
         .dropdown-menu{
-            background-color: #333;
+            background-color: #3A3A3A;
         }
         .dropdown-toggle{
             color: $color-principal;
